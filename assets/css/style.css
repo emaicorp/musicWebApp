@@ -6,6 +6,7 @@
   box-sizing: border-box;
   color: var(--white);
   font-family: "Poppins", sans-serif;
+  /* border: 1px solid white; */
 }
 :root {
   --background-color: #494141;
@@ -50,18 +51,66 @@
   box-shadow: 20px 20px 60px var(--shadow-1), -20px -20px 60px var(--shadow-2);
   transition: all 1s ease;
   overflow: hidden !important;
+  height: fit-content;
+  margin: auto;
+
 }
 #card:hover {
   box-shadow: 20px 20px 60px var(--shadow-1), -20px -20px 60px var(--shadow-2);
   scale: 1.1;
 }
+.sidebar{
+    padding-top: 20px;
+    margin: 0;
+    /* overflow-y: hidden; */
+    height: 100vh;
+    overflow-y: scroll !important;
+    scroll-behavior: smooth;
+    /* position: fixed; */
+}
+/*  SCROLL BAR DESIGN */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track { 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.717); 
+  }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.genre-li{
+    margin: 0;
+}
+.genre-li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .musicResults {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   padding: 10px 0px;
-  gap: 20px;
+  gap: 30px;
   row-gap: 40px;
-  margin: 0;
-  justify-content: space-between;
+  margin: auto;
+
+  padding-left: 30px;
+  /* justify-content: space-between; */
 }
