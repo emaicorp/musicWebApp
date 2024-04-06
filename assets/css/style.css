@@ -1,49 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--white);
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --background-color: #494141;
-  --white:#fff !important;
+  --white: #fff !important;
   --shadow-1: #3e3737;
   --shadow-2: #544b4b;
+}
+#input-group{
+    width: fit-content;
+    height: fit-content;
 }
 
 .body {
   background: var(--background-color);
   padding: 10px 0px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh !important;
 
 }
-nav{
-    text-align: center;
+.search .icon{
+    position: relative;
+    margin-left: -30px;
 }
-.search input{
-    background: none !important;
-    border: 1px solid  var(--white);
-    border-radius: 30px;
-    padding: 15px;
-    width:20%;
-    outline: none;
+.search input {
+  background: none !important;
+  border: 1px solid var(--white);
+  border-radius: 30px;
+  padding: 15px 40px 15px 15px;
+  width: 20%;
+  outline: none;
 }
-.row{
-    margin: 0;
+.row {
+  margin: 0;
 }
 #card {
   border-radius: 15px;
   background: var(--background-color);
   box-shadow: 20px 20px 60px var(--shadow-1), -20px -20px 60px var(--shadow-2);
+  transition: all 1s ease;
   overflow: hidden !important;
 }
+#card:hover {
+  box-shadow: 20px 20px 60px var(--shadow-1), -20px -20px 60px var(--shadow-2);
+  scale: 1.1;
+}
 .musicResults {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px 0px;
-    gap: 10px;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 20px;
+  row-gap: 40px;
+  margin: 0;
+  justify-content: space-between;
 }
