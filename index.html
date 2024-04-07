@@ -11,93 +11,134 @@
     <!--JAVASCRIPT FILES-->
     <script src="./assets/js/index.js" defer></script>
     <script src="./assets/js/bootstrap.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/8b3c4dac3e.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/8b3c4dac3e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="body">
-    <nav>
-      <div class="search ">
-       
-            <input type="text" class=" " placeholder="Search Music" aria-label="Recipient's username" aria-describedby="basic-addon2">
-  <span class=" icon" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
-       
-          </div>
-    </nav>
-
+    <!-- <div class="empty"></div> -->
     <!--MAIN SECTION-->
+    <div class="container-fluid mt-3">
+      <div class="row gap-3">
+        <div class="sidebar col-md-3 position-fixed" id="sticky-sidebar">
+          <div class="inner">
+            <ul></ul>
+          </div>
+        </div>
 
-    <div class="row gap-3">
-      <div class="sidebar col-md-2 border">
-        <ul>
-          
-        </ul>
-      </div>
-
-      <div class="musicResults   col-md-9">
-        <div class="card" id="card" style="width: 18rem">
-          <img src="./assets/images/download.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="offset-3 col-md-9" id="main">
+          <!-- <div class="empty"></div> -->
+          <div class="col-md-12">
+            <nav class="col-md-9 mb-5 navi nav">
+              <div class="search">
+                <input
+                  type="text"
+                  class=" "
+                  placeholder="Search Music"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <span class="icon" id="basic-addon2"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </div>
+            </nav>
+            <div class="empty"></div>
           </div>
-        </div>
-        <div class="card" id="card" style="width: 18rem">
-          <img src="./assets/images/download.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" id="card" style="width: 18rem">
-          <img src="./assets/images/download.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" id="card" style="width: 18rem">
-          <img src="./assets/images/download.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" id="card" style="width: 18rem">
-          <img src="./assets/images/download.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" id="card" style="width: 18rem">
-          <img src="./assets/images/download.jpeg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="col-md-12">
+            <div class="musicResults">
+              <div class="card" id="card" style="width: 18rem">
+                <img
+                  src="./assets/images/download.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="buttons"><i class="fa-solid fa-play"></i></a>
+                </div>
+              </div>
+              <div class="card" id="card" style="width: 18rem">
+                <img
+                  src="./assets/images/download.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="buttons"><i class="fa-solid fa-play"></i></a>
+                </div>
+              </div>
+              <div class="card" id="card" style="width: 18rem">
+                <img
+                  src="./assets/images/download.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="buttons"><i class="fa-solid fa-play"></i></a>
+                </div>
+              </div>
+              <div class="card" id="card" style="width: 18rem">
+                <img
+                  src="./assets/images/download.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="buttons"><i class="fa-solid fa-play"></i></a>
+                </div>
+              </div>
+              <div class="card" id="card" style="width: 18rem">
+                <img
+                  src="./assets/images/download.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="buttons"><i class="fa-solid fa-play"></i></a>
+                </div>
+              </div>
+              <div class="card" id="card" style="width: 18rem">
+                <img
+                  src="./assets/images/download.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class=" buttons"><i class="fa-solid fa-play"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
